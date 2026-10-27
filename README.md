@@ -1,7 +1,7 @@
 # BÀI THI THỰC HÀNH - CÂU 1 VÀ CÂU 2
 
-- Họ và tên: **[Điền họ tên]**
-- MSSV: **[Điền MSSV]**
+- Họ và tên: Nguyễn Ngọc Nhân
+- MSSV: 2273402010349
 - Nhánh: `cau-2`
 
 ## Nội dung
@@ -10,12 +10,12 @@
 - Kiểm tra dữ liệu trống, `Patterns.EMAIL_ADDRESS`, mật khẩu ít nhất 6 ký tự.
 - Thông báo lỗi hoặc `Xác thực thành công!` trên `txtStatus`.
 
-## Minh chứng Câu 1
+## Minh chứng Câu 2
 > **Cần chụp ảnh THẬT trên thiết bị hoặc Emulator và lưu đúng tên; file ZIP không có ảnh giả.**
 
-![Validation Error](screenshots/cau1_validation_error.png)
 
-![Validation Success](screenshots/cau1_validation_success.png)
+
+![Validation Success](screenshots/cau2_profile_intent.png.jpg)
 
 **Cách thử:**
 - Email `abc`, mật khẩu `123456` → lỗi định dạng Email.
