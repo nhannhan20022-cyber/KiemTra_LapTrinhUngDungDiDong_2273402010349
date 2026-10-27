@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KiemTra_LapTrinhUngDungDiDong_MSSV"
+rootProject.name = "KiemTra_LapTrinhUngDungDiDong_2273402010349"
 include(":app")
