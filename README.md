@@ -1,8 +1,8 @@
-# BÀI THI THỰC HÀNH - CÂU 1
+# BÀI THI THỰC HÀNH - CÂU 1 VÀ CÂU 2
 
 - Họ và tên: **[Điền họ tên]**
 - MSSV: **[Điền MSSV]**
-- Nhánh: `cau-1`
+- Nhánh: `cau-2`
 
 ## Nội dung
 - LoginActivity bằng ConstraintLayout phẳng, đúng 5 thành phần chính.
@@ -20,3 +20,11 @@
 **Cách thử:**
 - Email `abc`, mật khẩu `123456` → lỗi định dạng Email.
 - Email `test@gmail.com`, mật khẩu `123456` → `Xác thực thành công!`.
+
+## Minh chứng Câu 2
+> Chạy đăng nhập hợp lệ để chuyển sang ProfileActivity rồi chụp Email hiển thị đúng.
+
+![Profile Intent](screenshots/cau2_profile_intent.png)
+
+- `LoginActivity`: `Intent(this, ProfileActivity::class.java)` và `putExtra()`.
+- `ProfileActivity`: `getStringExtra()` và `finish()` khi Đăng xuất.
