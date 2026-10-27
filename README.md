@@ -1,8 +1,8 @@
-# BÀI THI THỰC HÀNH - CÂU 1 VÀ CÂU 2
+# BÀI THI THỰC HÀNH - CẢ 3 CÂU
 
 - Họ và tên: **[Điền họ tên]**
 - MSSV: **[Điền MSSV]**
-- Nhánh: `cau-2`
+- Nhánh: `cau-3`
 
 ## Nội dung
 - LoginActivity bằng ConstraintLayout phẳng, đúng 5 thành phần chính.
@@ -28,3 +28,22 @@
 
 - `LoginActivity`: `Intent(this, ProfileActivity::class.java)` và `putExtra()`.
 - `ProfileActivity`: `getStringExtra()` và `finish()` khi Đăng xuất.
+
+## Minh chứng Câu 3
+
+![ListView Display](screenshots/cau3_listview_display.png)
+
+![Item Click Toast](screenshots/cau3_item_click_toast.png)
+
+- `ProfileActivity` có `ListView` dưới phần Email và nút Đăng xuất.
+- `findViewById<ListView>`, `ArrayAdapter(android.R.layout.simple_list_item_1)`.
+- `setOnItemClickListener` hiển thị Toast **đúng tên môn học**.
+
+## Lưu ý bắt buộc trước khi nộp
+1. Thay `MSSV` trong tên thư mục project, `rootProject.name`, tên Repository GitHub.
+2. Điền họ tên và MSSV vào README tại từng nhánh.
+3. Chụp **5 ảnh chạy thật** tương ứng ba câu (2 ảnh Câu 1, 1 ảnh Câu 2, 2 ảnh Câu 3).
+4. Bổ sung ảnh vào đúng nhánh rồi đẩy cả `cau-1`, `cau-2`, `cau-3` lên GitHub Public.
+5. Nộp **link GitHub**, không nộp file ZIP.
+
+Xem `HUONG_DAN_MO_VA_NOP_BAI.txt` để biết cách mở project và chụp ảnh theo nhánh.

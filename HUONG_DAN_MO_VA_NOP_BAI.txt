@@ -1,0 +1,69 @@
+HƯỚNG DẪN MỞ PROJECT ANDROID STUDIO (03 CÂU)
+================================================
+
+1) Giải nén file ZIP. Ví dụ thư mục sau giải nén:
+   KiemTra_LapTrinhUngDungDiDong_MSSV
+
+2) Dùng File > Open trong Android Studio, chọn THƯ MỤC này
+   (chứa settings.gradle.kts và app/), không chỉ mở 1 file Kotlin.
+   Cho phép Android Studio tải Gradle, Android SDK nếu cần, rồi Sync.
+   Thiết lập Gradle JDK là JDK 17 hoặc 21 (Settings > Build Tools > Gradle).
+
+3) Bản mặc định: nhánh cau-3, có đầy đủ Câu 1-2-3.
+   Nhấn Run, nhập test@gmail.com và 123456.
+   Đăng nhập -> thông tin Email + danh sách 5 kỹ năng.
+   Chạm danh sách -> Toast tên đã chọn. Đăng xuất -> quay lại Login.
+
+4) Trong Android Studio: View > Tool Windows > Terminal (Alt+F12)
+   git branch
+   git switch cau-1    (có Câu 1, bấm Đăng nhập để thấy thông báo thành công)
+   git switch cau-2    (có Câu 1 + Câu 2)
+   git switch cau-3    (có đầy đủ 3 Câu)
+   LƯU Ý: sau khi sửa file, cần git commit hoặc git stash trước khi switch.
+
+5) Chụp ảnh màn hình thật bằng Android Emulator, đặt chính xác:
+   screenshots/cau1_validation_error.png
+   screenshots/cau1_validation_success.png
+   screenshots/cau2_profile_intent.png
+   screenshots/cau3_listview_display.png
+   screenshots/cau3_item_click_toast.png
+
+   Vì các nhánh được tạo trước khi chụp ảnh, sau khi đưa ảnh vào cau-1:
+       git add screenshots
+       git commit -m "docs: anh minh chung cau 1"
+   Chuyển sang cau-2, mang ảnh Cau 1 từ cau-1 qua:
+       git switch cau-2
+       git restore --source=cau-1 -- screenshots/cau1_validation_error.png screenshots/cau1_validation_success.png
+   Chụp ảnh Câu 2 và lưu screenshots/cau2_profile_intent.png,
+   rồi:
+       git add screenshots
+       git commit -m "docs: minh chung cau 1 va 2"
+   Chuyển sang cau-3, mang ảnh Cau 1+2 từ cau-2 qua:
+       git switch cau-3
+       git restore --source=cau-2 -- screenshots/cau1_validation_error.png screenshots/cau1_validation_success.png screenshots/cau2_profile_intent.png
+   Chụp ảnh Câu 3, rồi:
+       git add screenshots
+       git commit -m "docs: minh chung day du 3 cau"
+
+6) ĐỔI MSSV: thay `MSSV` trong tên project, settings.gradle.kts,
+   tên repo GitHub Public; sửa README từng nhánh theo thông tin của mình.
+
+7) Tạo repository Public MỚI trong tài khoản của bạn (không tạo README
+   khi tạo trên GitHub), copy URL https://github.com/<username>/<repo>.git
+   Trong Terminal:
+       git remote add origin https://github.com/<username>/<repo>.git
+       git push -u origin main
+       git push -u origin cau-1
+       git push -u origin cau-2
+       git push -u origin cau-3
+
+8) Nộp LINK REPOSITORY GitHub, KHÔNG NỘP ZIP cho giảng viên.
+
+GHI CHÚ:
+- Đã có lịch sử Git với 3 nhánh đúng kế thừa: main -> cau-1 -> cau-2 -> cau-3.
+- Chưa có ảnh minh chứng thật vì phải tự chụp từ Emulator Android.
+- Code chỉ dùng ConstraintLayout XML, findViewById, KHÔNG dùng ViewBinding.
+- File gradle-wrapper.properties chỉ định Gradle 8.7. `gradlew.bat`
+  và `gradlew` là script bootstrap Gradle 8.7 đơn giản, có thể dùng khi
+  không có Gradle cài sẵn (yêu cầu kết nối Internet). Nếu Android Studio
+  hỏi chọn Gradle distribution, chọn Gradle 8.7.
