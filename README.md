@@ -1,7 +1,7 @@
 # BÀI THI THỰC HÀNH - CÂU 1
 
-- Họ và tên: **[Điền họ tên]**
-- MSSV: **[Điền MSSV]**
+- Họ và tên: Nguyễn Ngọc Nhân
+- MSSV: 2273402010349
 - Nhánh: `cau-1`
 
 ## Nội dung
@@ -13,9 +13,9 @@
 ## Minh chứng Câu 1
 > **Cần chụp ảnh THẬT trên thiết bị hoặc Emulator và lưu đúng tên; file ZIP không có ảnh giả.**
 
-![Validation Error](screenshots/cau1_validation_error.png)
+![Validation Error](screenshots/cau1_validation_error.png.jpg)
 
-![Validation Success](screenshots/cau1_validation_success.png)
+![Validation Success](screenshots/cau1_validation_success.png.jpg)
 
 **Cách thử:**
 - Email `abc`, mật khẩu `123456` → lỗi định dạng Email.
