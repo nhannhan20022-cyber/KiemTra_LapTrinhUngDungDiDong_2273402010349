@@ -10,19 +10,17 @@
 - Kiểm tra dữ liệu trống, `Patterns.EMAIL_ADDRESS`, mật khẩu ít nhất 6 ký tự.
 - Thông báo lỗi hoặc `Xác thực thành công!` trên `txtStatus`.
 
+## Minh chứng Câu 1
+
+### Kiểm tra dữ liệu không hợp lệ
+![Validation Error](screenshots/cau1_validation_error.png.jpg)
+
+### Kiểm tra dữ liệu hợp lệ
+![Validation Success](screenshots/cau1_validation_success.png.jpg)
+
 ## Minh chứng Câu 2
-> **Cần chụp ảnh THẬT trên thiết bị hoặc Emulator và lưu đúng tên; file ZIP không có ảnh giả.**
-
-
-
 ![Validation Success](screenshots/cau2_profile_intent.png.jpg)
 
-**Cách thử:**
-- Email `abc`, mật khẩu `123456` → lỗi định dạng Email.
-- Email `test@gmail.com`, mật khẩu `123456` → `Xác thực thành công!`.
-
-## Minh chứng Câu 2
-> Chạy đăng nhập hợp lệ để chuyển sang ProfileActivity rồi chụp Email hiển thị đúng.
 
 ![Profile Intent](screenshots/cau2_profile_intent.png)
 
